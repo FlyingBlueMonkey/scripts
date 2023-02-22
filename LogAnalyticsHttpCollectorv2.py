@@ -58,10 +58,10 @@ def post_data(WORKSPACE_ID, WORKSPACE_SHARED_KEY, body, LOG_TYPE):
         'x-ms-date': xmsdate
     }
 
-    print(f'{uri},{signature},{body}')
+    #print(f'{uri},{signature},{body}')
     response = requests.post(uri,data=body, headers=headers)
     if (response.status_code >= 200 and response.status_code <= 299):
-        print(f'Response code: {response.status_code} {response.reason} {response.raw}')
+        #print(f'Response code: {response.status_code} {response.reason} {response.raw}')
         return True
     else:
         print(f'Response code: {response.status_code} {response.reason} {response.raw}')
