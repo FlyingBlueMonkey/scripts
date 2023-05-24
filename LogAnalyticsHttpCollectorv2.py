@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # LogAnalyticsHttpCollectorv2.py
-# a very simple python script to log to Log Analytics
+# a very (very) simple python script to log to Log Analytics
 # written for api-version=2016-04-01 https://learn.microsoft.com/en-us/rest/api/loganalytics/create-request
 # Matt Egen github.com/FlyingBlueMonkey January 2023
+# See https://github.com/FlyingBlueMonkey/scripts/blob/main/LICENSE.md for licensing information
 
 #Script signature:python3 LogAnalyticsHttpCollectorv2.py [workspaceID] [workspaceKey] [logtype] [data]
 
@@ -68,5 +69,3 @@ def post_data(WORKSPACE_ID, WORKSPACE_SHARED_KEY, body, LOG_TYPE):
 
 
 post_data(workspaceId, sharedKey, logData, logType)
-
-
